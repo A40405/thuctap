@@ -8,7 +8,7 @@ from style_content_model import StyleContentModel
 class StyleTransfer:
     style_layers = ['block1_conv1', 'block2_conv1', 'block3_conv1', 'block4_conv1', 'block5_conv1']
     content_layers = ['block5_conv2']
-    def __init__(self, style_path, content_path, img_size=512, style_weight=1e-2, content_weight=1e4, total_variation_weight = 30, epochs = 10, steps_per_epoch=100):
+    def __init__(self, img_size=512, style_weight=1e-2, content_weight=1e4, total_variation_weight = 30, epochs = 10, steps_per_epoch=100):
         self.img_size = img_size
         self.style_weight = style_weight
         self.content_weight = content_weight
@@ -19,6 +19,9 @@ class StyleTransfer:
 
         self.num_content_layers = len(StyleTransfer.content_layers)
         self.num_style_layers = len(StyleTransfer.style_layers)
+        
+        
+    def __call__(self, style_path, content_path):
         self.style_image = self.load_img_io(style_path)
         self.content_image = self.load_img_io(content_path)
         self.image = tf.Variable(self.content_image)
