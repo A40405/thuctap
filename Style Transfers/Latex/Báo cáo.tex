@@ -1,0 +1,366 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath, amssymb, txfonts, mathdots, kpfonts}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{eso-pic}
+
+\begin{document}
+\AddToShipoutPictureBG*{%
+  \includegraphics[width=\paperwidth,height=\paperheight]{borders.png}
+}
+% \AddToShipoutPictureBG{%
+%   \begin{tikzpicture}[remember picture, overlay]
+%     \draw[line width=10pt,color=orange]
+%     (current page.north west) rectangle (current page.south east);
+%   \end{tikzpicture}%
+% }
+\centering % Center the contents of the page
+
+{\bfseries BỘ GIÁO DỤC VÀ ĐÀO TẠO} \par
+{\bfseries TRƯỜNG ĐẠI HỌC THĂNG LONG} \par
+{\bfseries NGÀNH TRÍ TUỆ NHÂN TẠO} \par
+
+\vspace{2cm}
+{\bfseries BÁO CÁO THỰC TẬP} \par
+\vspace{2cm}
+
+\includegraphics*[width=3.77in, height=2.47in]{image1}
+
+\vspace{2cm}
+
+{\bfseries Giảng viên hướng dẫn:} PAI005 Hồ Hồng Trường \par
+{\bfseries Sinh viên thực hiện:} A40405 Bùi Hữu Huấn \par
+{\bfseries Lớp:} TA33c1 \par 
+
+\vspace{2cm}
+
+{\bfseries Hà Nội, 9 tháng 3 năm 2023}
+\newpage
+\ClearShipoutPictureBG
+
+\noindent \textbf{\Large Lời mở đầu}
+
+\noindent
+
+\vspace{1cm}
+
+\noindent Thực tập là một phần quan trọng giúp sinh viên có thêm kinh nghiệm thực tế, áp dụng kiến thức đã học vào thực tiễn, nâng cao kỹ năng và tạo cơ hội để tìm hiểu về một lĩnh vực nghề nghiệp cụ thể. Trong kỳ này, tôi có cơ hội được tham gia thực tập Trí tuệ nhân tạo tại phòng AI lab của trường Đại học Thăng Long.
+
+\vspace{0.5cm}
+
+\noindent Thực tập tại trường giúp tôi có cơ hội được tiếp cận với các dự án thực tế trong lĩnh vực AI. Trong suốt quá trình này, tôi đã được tham gia tìm hiểu và nghiên cứu về các thuật toán học máy, phát triển các ứng dụng trí tuệ nhân tạo. Đồng thời, tôi cũng có cơ hội học hỏi từ giảng viên và làm việc với các công nghệ mới nhất trong lĩnh vực AI, bao gồm các thư viện lập trình và các framework của AI. Tôi có thể áp dụng các kiến thức và kỹ năng đã học tập trong lớp học vào thực tiễn, nhờ đó tôi có được cái nhìn toàn diện và chi tiết về lĩnh vực mình đang theo học.
+
+\vspace{0.5cm}
+
+\noindent Qua kinh nghiệm thực tế này, tôi nhận thấy sức mạnh của trí tuệ nhân tạo và khả năng ứng dụng của nó trong đời sống và các lĩnh vực khác nhau. Đồng thời, tôi cũng đã học được cách giải quyết các vấn đề phức tạp và hiểu rõ hơn về cách thức triển khai phát triển các dự án nghiên cứu.
+
+\vspace{0.5cm}
+
+\noindent Tuy nhiên, trong quá trình thực tập, tôi cũng gặp phải một số khó khăn và thách thức. Đôi khi, việc sử dụng các công cụ và kỹ thuật AI đòi hỏi tôi phải nghiên cứu và áp dụng một cách kỹ lưỡng. Tuy nhiên, nhờ có sự hỗ trợ và giúp đỡ của giảng viên và đồng nghiệp trong phòng thí nghiệm, tôi đã vượt qua các khó khăn này và hoàn thành công việc được giao. Thực tập đã giúp em rèn luyện kỹ năng làm việc độc lập, tư duy sáng tạo, và kỹ năng giải quyết vấn đề.
+
+\vspace{0.5cm}
+
+\noindent Ngoài ra, thực tập cũng mang lại cho em nhiều trải nghiệm và học hỏi về cách thức làm việc chuyên nghiệp trong môi trường công nghiệp. Em đã học được cách thức tương tác và làm việc với các thành viên trong đội ngũ, cũng như cách thức thuyết trình và báo cáo kết quả công việc của mình. Tất cả những kinh nghiệm và kiến thức này sẽ giúp em chuẩn bị tốt hơn cho sự nghiệp tương lai.
+
+\vspace{0.5cm}
+
+\noindent Cuối cùng, em muốn gửi lời cảm ơn chân thành đến Ban giám hiệu và các giảng viên của trường đã cung cấp cho em cơ hội thực tập này. Em cũng muốn gửi lời cảm ơn đến các đồng nghiệp trong đội ngũ thực tập, đã giúp đỡ em trong suốt quá trình làm việc. Em hy vọng sẽ có cơ hội hợp tác với mọi người trong tương lai.
+
+\newpage
+\tableofcontents{\it Mục Lục}
+\vspace{0.5cm}
+\section{Giới thiệu chung}
+\subsection{Nhiệm vụ được giao}
+\subsubsection{Sử dụng git để chia sẻ mã nguồn}
+\subsubsection{Tìm hiểu về tensorflow_hub}
+\subsubsection{Tìm hiểu hướng đối tượng trong python}
+\subsubsection{Tìm hiểu về Neural style transfer}
+\subsubsection{Tìm hiểu FastAPI và sử dụng nó để tạo ra sản phẩm cho người dùng.}
+
+\subsection{Kiến thức đã học được}
+\subsubsection{Kiến thức về bài toán}
+\subsubsection{Các thuật toán}
+\subsubsection{Kiến thức tensorflow}
+\subsubsection{Đóng gói được mô hình và tạo sản phẩm}
+
+\subsection{Kỹ năng đã học được}
+\subsubsection{Kỹ năng tìm hiểu và nghiên cứu các công nghệ mới liên quan đến lĩnh vực AI}
+\subsubsection{Kỹ năng làm việc với dữ liệu}
+
+\section{Khó khăn}
+\subsection{Khó khăn trong việc tìm hiểu}
+\subsection{Khó khăn khi thực hiện}
+
+\section{Mô tả sản phẩm}
+\subsection{Đầu vào của sản phẩm}
+\subsection{Đầu ra sản phẩm}
+\subsection{Các API}
+
+\section{Kết luận}
+\section{Tài liệu tham khảo}
+
+\newpage
+\setcounter{section}{0}
+\section{ Giới thiệu chung}
+
+\noindent
+\noindent Em l\`{a} sinh vi\^{e}n n\u{a}m ba ng\`{a}nh Tr\'{i} tuệ v\`{a} {\dj}\~{a} thực tập tại ph\`{o}ng AI lab trường {\DJ}ại học Th\u{a}ng Long trong l\~{i}nh vực tr\'{i} tuệ nh\^{a}n tạo (AI). Thực tập của em k\'{e}o d\`{a}i trong v\`{o}ng 3 th\'{a}ng, từ th\'{a}ng 12 n\u{a}m 2023 {\dj}ến th\'{a}ng 3 n\u{a}m 2023.
+
+\noindent Trong b\'{a}o c\'{a}o n\`{a}y, em sẽ tr\`{i}nh b\`{a}y về kinh nghiệm của m\`{i}nh trong việc thực tập tại trường, bao gồm cả c\'{a}c nhiệm vụ {\dj}ược giao, c\'{a}c kỹ n\u{a}ng, kiến thức m\`{a} em {\dj}\~{a} học {\dj}ược v\`{a} những kh\'{o} kh\u{a}n gặp phải.
+
+
+\begin{enumerate}
+\item Sử dụng git để chia sẻ mã nguồn
+\begin{itemize}
+\item Tạo tài khoản github và cài đặt git trên máy.
+\item Học các câu lệnh về git.
+\item Dùng git để upload file thử 1 file trong máy lên tài khoản github đã tạo.
+\item Upload, update các file code đã làm lên tài khoản github.
+\end{itemize}
+
+\item Tìm hiểu về tensorflow\_hub
+\begin{itemize}
+    \item Dùng thử một vài mô hình học máy có sẵn của thư viện tensorflow\_hub[1] trong ngôn ngữ lập trình Python.
+\end{itemize}
+
+\item Tìm hiểu hướng đối tượng trong Python.
+
+\item Tìm hiểu về Neural style transfer 
+\begin{itemize}
+    \item Tìm hiểu về xử lý ảnh trong Trí tuệ nhân tạo.
+    \item Tensorflow được sử dụng trong bài.
+    \item Gradient Descent, Backpropagation và cách chúng được sử dụng bài toán.
+    \item Ma trận Gram.
+    \item Hàm loss của bài toán.
+\end{itemize}
+
+\item Tìm hiểu FastAPI và sử dụng nó để tạo ra sản phẩm cho người dùng.
+\end{enumerate}
+
+
+\section{Kiến thức đã học}
+
+Trong quá trình thực tập, tôi đã được nhắc lại kiến thức cũ và học được kiến thức mới, bao gồm:
+\vspace{1cm}
+\subsection{Kiến thức về bài toán}
+
+\begin{enumerate}
+\item Bài toán Style Transfer
+\begin{itemize}
+\item Đây là bài toán yêu cầu các thuật toán và mô hình máy học để học cách chuyển đổi phong cách giữa các hình ảnh, từ đó tạo ra các hình ảnh mới từ cặp ảnh nội dung-phong cách.
+\item Để giải quyết bài toán này, cần xác định cách biểu diễn phong cách của bức ảnh phong cách và cách áp dụng biểu diễn đó lên bức ảnh nội dung. Các mô hình Deep Learning như Convolutional Neural Networks (CNN) thường được sử dụng để học biểu diễn phong cách và áp dụng biểu diễn đó để chuyển đổi phong cách của hình ảnh.
+\end{itemize}
+
+\item Ma trận Gram
+\begin{itemize}
+\item Ma trận Gram được sử dụng để tìm ra các mẫu màu sắc trong bức ảnh và sử dụng chúng để thực hiện chuyển đổi một bức ảnh thành một bức ảnh mới có phong cách của một bức ảnh khác. Các mẫu này được trích xuất từ 5 lớp tích chập của mạng VGG19.
+\end{itemize}
+
+\item Hàm loss
+\begin{itemize}
+\item Hàm loss được tính bằng tổng của mất mát ảnh nội dung và ảnh phong cách so với ảnh đầu ra. Hai giá trị mất mát này đều dùng công thức sum-squared-error. Ảnh đầu ra ban đầu cùng chính là ảnh nội dung.
+\end{itemize}
+\end{enumerate}
+
+\subsection{Các thuật toán}
+\vspace{1cm}
+\begin{enumerate}
+\item Thuật toán lan truyền ngược
+\begin{itemize}
+\item Thuật toán lan truyền ngược (Backpropagation) là một thuật toán được sử dụng để tính toán đạo hàm của hàm mất mát đối với từng tham số của mạng neuron. Backpropagation được sử dụng trong quá trình huấn luyện mạng neuron để tính toán gradient của hàm mất mát đối với các trọng số trong mạng neuron.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Thuật toán Gradent Descent:
+\begin{itemize}
+\item Trong học sâu, Gradent Descent dùng để cập nhật trọng số của mạng trong quá trình huấn luyện bằng cách tính gradient của hàm mất mát theo các trọng số (được tính toán bằng thuật toán Backpropagation). Công thức tối ưu cơ bản nhất để cập nhật các trọng số là lấy giá trị hiện tại của chúng trừ cho tích gradient của hàm mất mát đối theo các trọng số đó với một hệ số học tập (learning rate).
+\item •	Ở trong bài toán Style Transfer chúng ta dùng sử dụng Gradent Descent có sẵn trong tensorflow: tf.GradientTape() mà trong số là bức ảnh đầu ra
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Thuật toán Adam:
+\begin{itemize}
+\item Adam là một thuật toán tối ưu hóa được sử dụng phổ biến trong deep learning để cập nhật trọng số của mạng neural network. Thuật toán này kết hợp cả kỹ thuật của RMSProp và Momentum để cập nhật trọng số một cách hiệu quả.Adam hoạt động bằng cách tính toán một tốc độ học động cho từng tham số của mô hình, và cập nhật trọng số bằng cách sử dụng tốc độ học động này. 
+\end{itemize}
+\end{enumerate}
+
+\subsection{Kiến thức về TensorFlow}
+\vspace{1cm}
+\begin{enumerate}
+\item Mảng một chiều tensor:
+\begin{enumerate}
+\item
+\end{enumerate}
+\item Tensor được sử dụng để lưu trữ và xử lý dữ liệu trong các mô hình Deep Learning và Machine Learning được triển khai bằng TensorFlow. Trong quá trình đào tạo mô hình Deep Learning, các tensor được sử dụng để biểu diễn các dữ liệu đầu vào, các trọng số và đầu ra của mô hình, và các phép tính được sử dụng để tối ưu hóa các tham số của mô hình.
+\item Các hàm và cách khởi tạo tensor theo kiểu hằng hay kiểu biến.
+\item Các phép toán giữa các tensor.
+\item Mô hình và thuật toán tối ưu có sẵn.
+\item Mô hình học sâu: mạng nơ-ron tích chập (CNN), mạng nơ-ron hồi quy (RNN), mạng nơ-ron đối kháng sinh (GAN), và nhiều mô hình khác.
+\item Sử dụng tf.keras.applications để tải xuống và sử dụng nhiều mô hình viết sẵn như VGG19. Sau đó, sử dụng phương pháp Backbone: lấy các lớp tích chập trong VGG19 để đưa vào mô hình.
+\item Tối ưu hóa, bao gồm các thuật toán tối ưu hóa gradient descent, Adam, RMSProp, Adagrad, và nhiều thuật toán khác.
+\end{enumerate}
+
+\subsection{Đóng gói mô hình và tạo sản phẩm}
+\vspace{1cm}
+
+\begin{enumerate}
+\item Học được hướng đối tượng đồng thời đóng gói toàn bộ bài toán vào 1 class với đầu vào là 2 bức ảnh và đầu ra là bức ảnh đã được style transfer.
+\item Áp dụng được mô hình đã đóng gói vào FastAPI.
+\end{enumerate}
+
+\noindent 
+
+
+\section{ Kỹ n\u{a}ng {\dj}\~{a} học {\dj}ược}
+
+\noindent 
+
+\noindent Trong qu\'{a} tr\`{i}nh thực tập, em {\dj}\~{a} học {\dj}ược nhiều kỹ n\u{a}ng mới, bao gồm:
+
+
+\subsection{ Kỹ n\u{a}ng t\`{i}m hiểu v\`{a} nghi\^{e}n cứu c\'{a}c c\^{o}ng nghệ mới li\^{e}n quan {\dj}ến l\~{i}nh vực AI}
+
+\begin{enumerate}
+\item  Trong qu\'{a} tr\`{i}nh thực tập, em {\dj}\~{a} {\dj}ược hướng dẫn v\`{a} gi\'{u}p {\dj}ỡ {\dj}ể c\'{o} thể t\`{i}m hiểu v\`{a} \'{a}p dụng c\'{a}c c\^{o}ng nghệ mới nhất {\dj}ể giải quyết c\'{a}c vấn {\dj}ề trong l\~{i}nh vực AI. Em {\dj}\~{a} học c\'{a}ch {\dj}ọc hiểu b\`{a}i b\'{a}o khoa học[2], t\`{a}i liệu hướng dẫn[3] v\`{a} m\~{a} nguồn mở {\dj}ể \'{a}p dụng ph\'{a}t triển ứng dụng AI[4]. Kỹ n\u{a}ng n\`{a}y rất quan trọng {\dj}ối với một chuy\^{e}n gia AI, v\`{i} l\~{i}nh vực n\`{a}y lu\^{o}n {\dj}ang ph\'{a}t triển v\`{a} thay {\dj}ổi li\^{e}n tục, do {\dj}\'{o} việc nắm bắt {\dj}ược c\'{a}c c\^{o}ng nghệ mới sẽ gi\'{u}p cho một chuy\^{e}n gia AI c\'{o} thể {\dj}ưa ra c\'{a}c giải ph\'{a}p v\`{a} sản phẩm mới, tạo sự kh\'{a}c biệt v\`{a} t\u{a}ng cường t\'{i}nh cạnh tranh của m\`{i}nh tr\^{e}n thị trường.
+\end{enumerate}
+
+
+\subsection{ Kỹ n\u{a}ng l\`{a}m việc với dữ liệu}
+
+\begin{enumerate}
+\item  Em {\dj}\~{a} học c\'{a}ch l\`{a}m việc với dữ liệu ảnh như học c\'{a}ch sử dụng c\'{a}c c\^{o}ng cụ {\dj}ọc ảnh -- hiển thị ảnh, chuyển {\dj}ổi kiểu dữ liệu ảnh sang c\'{a}c kiểu mảng của numy, tensor bằng c\'{a}c thư viện của Python như Opencv, Matplotlib, Pillow, Numpy, Tensorflow...
+\end{enumerate}
+
+
+\section{ Kh\'{o} kh\u{a}n}
+
+\noindent 
+
+\noindent Trong qu\'{a} tr\`{i}nh thực tập, em {\dj}\~{a} {\dj}ối mặt với một số kh\'{o} kh\u{a}n v\`{a} th\'{a}ch thức nhất {\dj}ịnh:
+
+
+\subsection{ Kh\'{o} kh\u{a}n trong việc t\`{i}m hiểu}
+
+\begin{enumerate}
+\item  Khi t\`{i}m hiểu thư tensorflow\_hub v\`{a} d\`{u}ng m\^{o} h\`{i}nh object detection th\`{i} {\dj}ầu ra của m\^{o} h\`{i}nh l\`{a} 1 dict, chứ kh\^{o}ng phải l\`{a} 1 ảnh n\^{e}n kh\^{o}ng thể hiện thị bức ảnh sau khi {\dj}ược nhận diện
+
+\item  Trong b\`{a}i b\'{a}o khoa học ${}^{\ }${\dj}ược viết bằng tiếng anh, tuy c\'{o} c\'{a}c c\^{o}ng cụ hỗ trợ cho việc dịch nhưng vẫn kh\^{o}ng thể hiểu hết {\dj}ược to\`{a}n bộ \'{y} c\'{o} trong b\`{a}i b\'{a}o
+
+\item  {\DJ}oạn m\~{a} trong t\`{a}i liệu tham khảo c\'{o} kh\'{a} nhiều kiến thức cần t\`{i}m hiểu lại từ {\dj}ầu như:
+
+\begin{enumerate}
+\item  Gradient Descent, Backpropagation: c\'{a}c t\`{a}i liệu viết kh\'{a}i niệm chủ yếu viết bằng tiếng anh, dịch ra kh\^{o}ng s\'{a}t ngh\~{i}a, c\^{o}ng thức th\`{i} li\^{e}n quan {\dj}ến {\dj}ạo h\`{a}m to\'{a}n học v\`{a} nh\^{a}n c\'{a}c ma trận, cần phải hiểu s\^{a}u th\`{i} mới \'{a}p dụng v\`{a}o b\`{a}i to\'{a}n {\dj}ược. Khi học {\dj}ược c\'{a}c kh\'{a}i niệm th\`{i} cần \'{a}p dụng v\`{a}o dữ liệu lớn, l\'{u}c n\`{a}y biểu diễn th\`{a}nh code nhưng gặp nhiều lỗi, viết xong kh\^{o}ng biết c\'{a}ch so\'{a}t n\^{e}n vẫn thiếu {\dj}ạo h\`{a}m h\`{a}m loss.
+\end{enumerate}
+
+\item  Cần t\`{i}m hiểu về h\`{a}m Gram\_matrix v\`{a} h\`{a}m Loss, hai h\`{a}m n\`{a}y kh\'{a} mới, 
+
+\begin{enumerate}
+\item  H\`{a}m Gram giảm chiều nhưng kh\'{a}c với c\'{a}c phương ph\'{a}p PCA, FA m\`{a} lại giảm bằng c\'{a}ch nh\^{a}n n\'{o} với n\'{o} với quy tắt F${}_{AIKB\ }$* F${}_{AJKC\ }$= FABC, nếu kh\^{o}ng biết r\~{o} thứ tự của c\'{a}c chiều trong 1 bức ảnh th\`{i} kh\^{o}ng biết t\'{a}c dụng của h\`{a}m n\`{a}y.
+
+\item  H\`{a}m loss th\`{i} kh\'{a}c với c\'{a}c h\`{a}m loss th\^{o}ng thường
+\end{enumerate}
+
+\item  T\`{i}m hiểu v\`{a} sử dụng FastAPI kh\^{o}ng quen c\'{a}ch {\dj}ọc dữ liệu n\^{e}n ban {\dj}ầu sử dụng m\^{o} h\`{i}nh {\dj}\'{o}ng g\'{o}i sẵn kh\^{o}ng chạy {\dj}ược, phải tạo th\^{e}m h\`{a}m {\dj}ọc ảnh mới {\dj}ể ph\`{u} hợp.
+\end{enumerate}
+
+
+\subsection{  Kh\'{o} kh\u{a}n khi thực hiện}
+
+\begin{enumerate}
+\item  {\DJ}\`{o}i hỏi nhiều về kiến thức to\'{a}n học v\`{a} lập tr\`{i}nh.
+
+\item  {\DJ}\^{o}i l\'{u}c vẫn chưa hiểu r\~{o} y\^{e}u cầu của hướng dẫn thực tập nhưng cuối c\`{u}ng vẫn ho\`{a}n th\`{a}nh c\'{a}c y\^{e}u cầu {\dj}ược ph\^{a}n c\^{o}ng.
+\end{enumerate}
+
+\noindent 
+
+
+\section{ M\^{o} tả sản phẩm}
+
+
+\subsection{ {\DJ}ầu v\`{a}o của sản phẩm}
+
+\begin{enumerate}
+\item  Người d\`{u}ng sẽ cần cung cấp 2 bức ảnh:
+
+\begin{enumerate}
+\item  Style image (JPG or PNG) 
+
+\item  Content image (JPG or PNG) 
+\end{enumerate}
+
+\item  Nếu {\dj}ầu v\`{a}o c\'{o} kiểu kh\^{o}ng ph\`{u} hợp th\`{i} sẽ b\~{a}o lỗi 404
+\end{enumerate}
+
+
+\subsection{ {\DJ}ầu ra sản phẩm}
+
+\begin{enumerate}
+\item  L\`{a} một bức ảnh kết hợp bởi phong c\'{a}ch lấy từ ảnh Style image v\`{a} nội dung từ ảnh Content image.
+\end{enumerate}
+
+
+\subsection{ C\'{a}c API}
+
+\noindent 
+
+\begin{enumerate}
+\item  H\`{a}m style\_transfer d\`{u}ng {\dj}ể {\dj}ọc 2 bức ảnh người d\`{u}ng nhập l\^{e}n, th\^{o}ng qua class StyleTransfer {\dj}ể xử l\'{y} bức ảnh v\`{a} lưu bức ảnh. Sau khi chạy sever {\dj}ể nhập dữ liệu người d\`{u}ng sẽ nhập tại link http://127.0.0.1:8000/docs 
+
+\item  H\`{a}m get\_image trả về cho người d\`{u}ng bức ảnh. Link hiển thị ảnh v\`{a} download ảnh http://127.0.0.1:8000/style-transfer/
+\end{enumerate}
+
+\noindent 
+
+\noindent 
+
+
+\section{ Kết luận}
+
+\noindent 
+
+\noindent 
+
+\noindent Trong qu\'{a} tr\`{i}nh thực tập tại trường, em {\dj}\~{a} {\dj}ược trải nghiệm v\`{a} học hỏi rất nhiều kiến thức, kỹ n\u{a}ng v\`{a} kinh nghiệm mới trong l\~{i}nh vực xử l\'{y} ảnh v\`{a} tr\'{i} tuệ nh\^{a}n tạo. Thực tập {\dj}\~{a} gi\'{u}p em nắm vững c\'{a}c kh\'{a}i niệm cơ bản về xử l\'{y} ảnh, c\'{a}c thuật to\'{a}n v\`{a} m\^{o} h\`{i}nh học m\'{a}y {\dj}ể giải quyết b\`{a}i to\'{a}n trong l\~{i}nh vực n\`{a}y.
+
+\noindent 
+
+\noindent Em {\dj}\~{a} học {\dj}ược c\'{a}ch sử dụng c\'{a}c thư viện v\`{a} c\^{o}ng cụ phần mềm như OpenCV, TensorFlow, Keras, Pillow {\dj}ể xử l\'{y} ảnh v\`{a} huấn luyện c\'{a}c m\^{o} h\`{i}nh học m\'{a}y. Em {\dj}\~{a} {\dj}ược {\dj}\`{a}o tạo {\dj}ể tạo ra c\'{a}c chương tr\`{i}nh ứng dụng trong l\~{i}nh vực xử l\'{y} ảnh. Ngo\`{a}i ra, em {\dj}\~{a} {\dj}ược {\dj}\`{a}o tạo về c\'{a}ch sử dụng c\'{a}c phương ph\'{a}p tiền xử l\'{y} ảnh {\dj}ể ph\`{u} hợp với {\dj}ầu v\`{a}o của m\^{o} h\`{i}nh c\'{o} sẵn. Em {\dj}\~{a} thực h\`{a}nh c\'{a}ch tối ưu h\'{o}a m\^{o} h\`{i}nh học m\'{a}y {\dj}ể giải quyết c\'{a}c b\`{a}i to\'{a}n về xử l\'{y} ảnh, {\dj}ồng thời họ c\'{a}ch sử dụng c\'{a}c kiến thức về học s\^{a}u {\dj}ể huấn luyện m\^{o} h\`{i}nh Deep Learning.
+
+\noindent 
+
+\noindent Do thực tập ở trường n\^{e}n {\dj}ược hỗ trợ tận t\`{i}nh, \'{i}t kh\'{o} kh\u{a}n hơn so với c\'{a}c c\^{o}ng ti b\^{e}n ngo\`{a}i nhưng {\dj}\^{a}y l\`{a} trải nghiệm qu\'{y} gi\'{a} v\`{a} gi\'{u}p em ph\'{a}t triển sự nghiệp trong tương lai. Em cảm thấy h\`{a}i l\`{o}ng với những g\`{i} m\`{i}nh học {\dj}ược trong thời gian thực tập tại trường v\`{a} hy vọng rằng những kinh nghiệm, kiến thức v\`{a} kỹ n\u{a}ng n\`{a}y sẽ gi\'{u}p em th\`{a}nh c\^{o}ng trong sự nghiệp của m\`{i}nh.
+
+\noindent 
+
+
+\section{ T\`{a}i liệu tham khảo }
+
+\noindent 
+
+\noindent [2] B\`{a}i b\'{a}o khoa học ``A Neural Algorithm of Artistic Style'' của Leon A. Gatys, Alexander S. Ecker v\`{a} Matthias Bethge 
+
+\noindent 
+
+\noindent Link web tham khảo
+
+\noindent 
+
+\noindent [1] Tensorflow\_hub
+
+\noindent 
+
+\noindent [3] Code mẫu b\`{a}i to\'{a}n Style Transfer
+
+\noindent 
+
+\noindent [4] FastAPI
+
+\noindent 
+
+
+\end{document}
